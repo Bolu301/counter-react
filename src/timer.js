@@ -22,7 +22,7 @@ const Timer = () => {
 
   return (
     <div className="stopwatch text-center mt-9">
-      <h1 className="text-5xl my-5"> Stopwatch</h1>
+      <h1 className="text-5xl my-5"> Stopwatch!!!</h1>
       <div className="text-3xl">
         <span>{("0" + Math.floor((time / 3600000) % 60)).slice(-2)}:</span>
         <span>{("0" + Math.floor((time / 60000) % 60)).slice(-2)}:</span>
