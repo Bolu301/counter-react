@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const Timer = () => {
+const Timer = ({ time }) => {
   const [time, setTime] = useState(0);
   const [running, setRunning] = useState(false);
 
@@ -15,10 +15,6 @@ const Timer = () => {
     // }
     return () => clearInterval(interval);
   }, [running]);
-
-  useEffect(() => {
-    console.log(time);
-  }, [time]);
 
   return (
     <div className="stopwatch text-center mt-9">
