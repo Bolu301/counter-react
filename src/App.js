@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 function App() {
   const [count, setCount] = useState(0);
+  const [time, setTime] = useState(0);
 
   return (
     <div className="header text-center">
@@ -21,6 +22,7 @@ function App() {
           Decrement
         </button>
       </div>
+      <Timer time={time} setTime={setTime} />
     </div>
   );
 }
